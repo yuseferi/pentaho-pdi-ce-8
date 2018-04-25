@@ -1,0 +1,9 @@
+version: '3'
+services:
+  pentaho:
+    image: "pentaho-di:latest"
+    container_name: "pentaho-di"
+    volumes:
+      - ./ETLS:/opt/pentaho/repository
+    command: "/bin/bash"
+    tty: true
